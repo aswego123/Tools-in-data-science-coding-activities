@@ -9,5 +9,5 @@ def compress_image(input_path: Path, output_path: Path, quality: int = 85) -> No
         img.save(output_path, 'WEBP', quality=quality, optimize=True)
 
 # Batch process images
-for p in Path('download').glob('*.jpg'):
+for p in Path('input').glob('*.png'):
     compress_image(p, p.with_suffix('.webp'))
