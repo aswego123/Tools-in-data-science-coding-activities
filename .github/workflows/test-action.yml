@@ -1,0 +1,14 @@
+name: Test GitHub Action
+
+on:
+  workflow_dispatch: # manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 24ds1000070@ds.study.iitm.ac.in
+        run: echo "Hello from GitHub Actions!"
