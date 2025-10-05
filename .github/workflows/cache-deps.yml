@@ -11,12 +11,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: prime-cache-24a374a 
+      - name: prime-cache-24a374a
         id: cache-step
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: cache-24a374a
+          key: cache-24a374a  
 
       - name: Show cache result
         run: echo "Cache result: ${{ steps.cache-step.outputs.cache-hit }}"
