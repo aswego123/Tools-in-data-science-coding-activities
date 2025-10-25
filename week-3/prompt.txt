@@ -1,0 +1,1 @@
+Write the body of a JavaScript function that fetches the date when a GitHub user's repository was created using the GitHub API. Assume the variable "url" is already defined and contains the GitHub API URL for the repository. The response should only contain the function body (no function signature or closing bracket). Use "return" to return the result.
